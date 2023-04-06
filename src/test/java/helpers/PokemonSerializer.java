@@ -3,6 +3,10 @@ import com.google.gson.*;
 import models.PokemonModel;
 import java.lang.reflect.Type;
 
+/**
+ * Класс, содержащий метод для сериализации покемона из класса PokemonModel в Json элемент
+ * с параметрами name, weight, abilities
+ */
 public class PokemonSerializer implements JsonSerializer<PokemonModel> {
     @Override
     public JsonElement serialize(PokemonModel src, Type typeOfSrc, JsonSerializationContext context) {

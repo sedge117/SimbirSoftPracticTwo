@@ -6,6 +6,10 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс, содержащий метод для десериализации покемона из Json элемента в класс PokemonModel
+ * с параметрами name, weight, abilities
+ */
 public class PokemonDeserializer implements JsonDeserializer<PokemonModel> {
     @Override
     public PokemonModel deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
